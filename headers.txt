@@ -1,27 +1,27 @@
-GET https://www.googleapis.com/books/v1/volumes?q=Turing
-200
-904 ms
+GET https://www.googleapis.com/books/v1/volumes?q=Turing           // http get request
+200                                                                // status code ( request was succesful )
+904 ms                                                             // request took 904 ms to complete
 Network
-Request Headers
-User-Agent: PostmanRuntime/7.51.0 ??
-Accept: */* ?? 
-Cache-Control: no-cache ?? 
-Postman-Token: 23b3a966-0d4c-406f-b97f-6936ed070713
-Host: www.googleapis.com
-Accept-Encoding: gzip, deflate, br
-Connection: keep-alive
+Request Headers                                                     
+User-Agent: PostmanRuntime/7.51.0                                  // tells the server the request is coming from postman with version 7.51
+Accept: */*                                                        // server can accept any form of response
+Cache-Control: no-cache                                            // server can not return a cached reponse
+Postman-Token: 23b3a966-0d4c-406f-b97f-6936ed070713                // used by Postman to help track and debug requests
+Host: www.googleapis.com                                           // this is the server being contacted
+Accept-Encoding: gzip, deflate, br                                 // the server supports gzip, deflate, and br as compression methods
+Connection: keep-alive                                             // the tcp connection should stay open for all future requests
 Response Headers
 Content-Type: application/json; charset=UTF-8
-Vary: Origin
+Vary: Origin                                                       // may change response based on the origin headers
 Vary: X-Origin
 Vary: Referer
-Content-Encoding: gzip
+Content-Encoding: gzip                                             // the response body is compressed using gzip
 Date: Sun, 01 Feb 2026 17:17:29 GMT
 Server: ESF
-X-XSS-Protection: 0
+X-XSS-Protection: 0                                                // disables the browsers built in scripting filter
 X-Frame-Options: SAMEORIGIN
 X-Content-Type-Options: nosniff
 Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-Transfer-Encoding: chunked
+Transfer-Encoding: chunked                                         // the response body is sent in chunks
 Response Body
 Body is more than 10 KB and can only be viewed in editor. 
